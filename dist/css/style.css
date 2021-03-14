@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* height: -webkit-fill-available;  to make 100vh look good on mobile*/
+}
+
+body {
+  min-height: 100vh;
+  /* min-height: -webkit-fill-available; to make 100vh look good on mobile*/
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+form {
+  margin: auto;
+  border: 1px red solid;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+form * {
+  display: block;
+}
+
+input {
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
+input:invalid {
+  border: 2px red solid;
+}
+input:valid {
+  border: 2px green solid;
+}
+
+button {
+  margin: 2rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
