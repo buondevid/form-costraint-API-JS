@@ -44,10 +44,6 @@ input {
 	padding: 0.5rem;
 	width: 30rem;
 
-	&:invalid {
-		border: 2px red solid;
-	}
-
 	&:valid {
 		border: 2px green solid;
 	}

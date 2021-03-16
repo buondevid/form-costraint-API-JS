@@ -12,7 +12,7 @@
 	<form autocomplete=off>
 		<p>
 			<label for='email'>Email</label>
-			<input id='email' name='email' type="email" required>
+			<input autocomplete="off" id='email' name='email' type="email" required>
 		</p>
 		<p>
 			<label for='country'>Country</label>
@@ -21,15 +21,16 @@
 		</p>
 		<p>
 			<label for='zipcode'>Zipcode</label>
-			<input id='zipcode' name='zipcode' type="text" minlength="5" maxlength="5" required>
+			<input id='zipcode' name='zipcode' type="number" min="10000" max="99999" required>
 		</p>
 		<p>
 			<label for='password'>Password</label>
-			<input id='password' name='password' type="password" required>
+			<input id='password' name='password' type="text" required>
+			<!-- <span class="pass-span"></span> -->
 		</p>
 		<p>
 			<label for='password-confirm'>Password Confirmation</label>
-			<input id='password-confirm' name='password-confirm' type="password" required>
+			<input id='password-confirm' name='password-confirm' type="text" required>
 		</p>
 		<button type='submit'>Submit</button>
 	</form>

@@ -43,9 +43,6 @@ input {
   padding: 0.5rem;
   width: 30rem;
 }
-input:invalid {
-  border: 2px red solid;
-}
 input:valid {
   border: 2px green solid;
 }
