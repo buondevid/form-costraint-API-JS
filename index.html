@@ -6,31 +6,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="dist/css/style.css">
 	<script src="main.js" defer></script>
+	<script src="https://kit.fontawesome.com/d6b9dc58a2.js" crossorigin="anonymous"></script>
 	<title>Form</title>
 </head>
 <body>
-	<form autocomplete=off>
+	<form autocomplete='off'>
+		<h1><abbr title="Using browser's validation to display custom messages">The Constraint Validation API</abbr></h1>
+		<p>(JavaScript)</p>
 		<p>
 			<label for='email'>Email</label>
-			<input autocomplete="off" id='email' name='email' type="email" required>
+			<input autocomplete='off' id='email' name='email' type="email" required>
 		</p>
 		<p>
 			<label for='country'>Country</label>
-			<input id='country' name='country' type="text" required>
+			<input autocomplete='new-password' id='country' name='country' type="text" pattern='\D*' required>
 			<span class='prova'></span>
 		</p>
 		<p>
 			<label for='zipcode'>Zipcode</label>
-			<input id='zipcode' name='zipcode' type="number" min="10000" max="99999" required>
+			<input autocomplete='new-password' id='zipcode' name='zipcode' type="number" min="10000" max="99999" required>
 		</p>
 		<p>
 			<label for='password'>Password</label>
-			<input id='password' name='password' type="text" required>
+			<input autocomplete='off' id='password' name='password' type="password" required>
+			<i class="far fa-eye"></i>
 			<!-- <span class="pass-span"></span> -->
 		</p>
 		<p>
 			<label for='password-confirm'>Password Confirmation</label>
-			<input id='password-confirm' name='password-confirm' type="text" required>
+			<input autocomplete='off' id='password-confirm' name='password-confirm' type="password" required>
+			<i class="far fa-eye"></i>
 		</p>
 		<button type='submit'>Submit</button>
 	</form>

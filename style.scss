@@ -1,56 +1,100 @@
 *,
 *::before,
 *::after {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-font-size: 62.5%;
-/* height: -webkit-fill-available;  to make 100vh look good on mobile*/
+	font-size: 62.5%;
+	/* height: -webkit-fill-available;  to make 100vh look good on mobile*/
 }
 
 body {
-min-height: 100vh;
-/* min-height: -webkit-fill-available; to make 100vh look good on mobile*/
-line-height: 1.5;
-font-size: 2rem;
+	height: 100%;
+	/* min-height: -webkit-fill-available; to make 100vh look good on mobile*/
+	line-height: 1.5;
+	font-size: 2rem;
+	background: #232427;
+	font-family: Avenir;
 }
 
 img,
 picture {
-max-width: 100%;
-display: block;
+	max-width: 100%;
+	display: block;
 }
 
 form {
-	margin: auto;
-	border: 1px red solid;
+	margin: 5rem auto 0;
 	padding: 10rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	width: fit-content;
+	color: whitesmoke;
+	border-radius: 5px;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+		5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
 
 	* {
 		display: block;
 	}
+
+	p:first-of-type {
+		margin-bottom: 4rem;
+	}
+}
+
+p {
+	position: relative;
+}
+
+h1 {
+	line-height: 1;
 }
 
 input {
 	margin-bottom: 2rem;
 	padding: 0.5rem;
 	width: 30rem;
+	background-color: whitesmoke;
+	border-radius: 5px;
+
+	&.touched:invalid {
+		border: 2px solid red;
+	}
 
 	&:valid {
 		border: 2px green solid;
 	}
+
+	&[id='zipcode'] {
+		width: 15rem;
+	}
+
+	&[id='country'] {
+		width: 15rem;
+	}
 }
 
 button {
-	margin: 2rem;
-	padding: 1.5rem;
-	font-size: 2rem;
+	margin-top: 4rem;
+	padding: 1rem;
+	border-radius: 5px;
+	font: avenir, helvetica;
+	font-weight: 600;
+	outline: none;
+	cursor: pointer;
+}
+
+i {
+	position: absolute;
+	right: 3%;
+	top: 44%;
+	color: #555;
+	cursor: pointer;
 }

@@ -12,10 +12,12 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   /* min-height: -webkit-fill-available; to make 100vh look good on mobile*/
   line-height: 1.5;
   font-size: 2rem;
+  background: #232427;
+  font-family: Avenir;
 }
 
 img,
@@ -25,30 +27,69 @@ picture {
 }
 
 form {
-  margin: auto;
-  border: 1px red solid;
+  margin: 5rem auto 0;
   padding: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
 form * {
   display: block;
+}
+form p:first-of-type {
+  margin-bottom: 4rem;
+}
+
+p {
+  position: relative;
+}
+
+h1 {
+  line-height: 1;
 }
 
 input {
   margin-bottom: 2rem;
   padding: 0.5rem;
   width: 30rem;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+input.touched:invalid {
+  border: 2px solid red;
 }
 input:valid {
   border: 2px green solid;
 }
+input[id=zipcode] {
+  width: 15rem;
+}
+input[id=country] {
+  width: 15rem;
+}
 
 button {
-  margin: 2rem;
-  padding: 1.5rem;
-  font-size: 2rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font: avenir, helvetica;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+i {
+  position: absolute;
+  right: 3%;
+  top: 44%;
+  color: #555;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
